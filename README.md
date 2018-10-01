@@ -1,10 +1,10 @@
 # kuan-wordcloud
 
-> test echarts
+简单包装一下：
+[https://github.com/ecomfe/echarts-wordcloud](https://github.com/ecomfe/echarts-wordcloud)
 
-简单包装一下：(echarts-wordcloud)[https://github.com/ecomfe/echarts-wordcloud]
-
-预览地址：http://luzhongkuan.cn/web/wordcloud
+预览地址：
+[http://luzhongkuan.cn/web/wordcloud](http://luzhongkuan.cn/web/wordcloud)
 
 ## 开发
 
