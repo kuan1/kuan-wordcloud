@@ -1,13 +1,41 @@
 process.env.NODE_ENV = 'development'
 
 const webpack = require('webpack')
+const merge = require('webpack-merge')
 const WebpackDevServer = require('webpack-dev-server')
 const chalk = require('chalk')
 const portfinder = require('portfinder')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-const webpackConfig = require('./webpack.config')
+const baseConfig = require('./webpack.config')
+const {
+  resolve
+} = require('./utils')
 
 const HOST = '0.0.0.0'
+
+// 开发配置
+const devConfig = {
+  mode: 'development',
+  entry: resolve('src/demo'),
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: 'public/index.html',
+      filename: 'index.html',
+      inject: true,
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true,
+        removeAttributeQuotes: true,
+        minifyJS: true,
+        minifyCSS: true
+      },
+      chunksSortMode: 'dependency'
+    }),
+  ]
+}
+
+const webpackConfig = merge(baseConfig, devConfig)
 
 // dev
 choosePort(process.env.PORT || 8888)
@@ -15,7 +43,6 @@ choosePort(process.env.PORT || 8888)
     if (port === null) {
       return
     }
-    webpackConfig.mode = 'development'
     const compiler = webpack(webpackConfig)
     compiler.hooks.done.tap('webpack dev', stats => {
       const message = `${stats.toString({colors: true})} \n`
@@ -37,7 +64,8 @@ choosePort(process.env.PORT || 8888)
         'access-control-allow-origin': '*',
       },
       stats: 'normal', // minimal normal
-      publicPath: webpackConfig.output.publicPath,
+      // publicPath: webpackConfig.output.publicPath,
+      publicPath: '',
       watchOptions: {
         ignored: /node_modules/,
       },

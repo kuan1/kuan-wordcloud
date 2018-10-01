@@ -5,7 +5,8 @@ const merge = require('webpack-merge')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+const nodeExternals = require('webpack-node-externals')
 
 const baseConfig = require('./webpack.config')
 
@@ -13,8 +14,18 @@ const {
   resolve
 } = require('./utils')
 
+const libName = 'kuan-wordcloud'
+const distPath = resolve('lib')
+
 // build config
 const webpackConfig = merge(baseConfig, {
+  entry: resolve('src'),
+  output: {
+    path: distPath,
+    filename: `${libName}.js`,
+    library: libName,
+    libraryTarget: 'commonjs2'
+  },
   mode: 'production',
   optimization: {
     minimizer: [
@@ -22,14 +33,14 @@ const webpackConfig = merge(baseConfig, {
       new UglifyJsPlugin()
     ]
   },
+  externals: [nodeExternals()],
   plugins: [
     new MiniCssExtractPlugin({
-      filename: './css/[name].[hash:7].css',
-      chunkFilename: './css/[id].[hash:7].css',
+      filename: `${libName}.css`,
     }),
-    new CleanWebpackPlugin([baseConfig.output.path || resolve('dist')], {
+    new CleanWebpackPlugin([distPath], {
       root: process.cwd()
-    })
+    }),
   ]
 })
 

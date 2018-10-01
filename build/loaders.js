@@ -2,7 +2,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 const isProd = process.env.NODE_ENV === 'production'
 
-console.log(process.env.NODE_ENV)
+console.log('NODE_ENV: ', process.env.NODE_ENV)
 
 // cssLoader
 const getCssLoader = (name) => {

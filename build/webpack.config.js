@@ -1,6 +1,5 @@
 const fs = require('fs')
 const webpack = require('webpack')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const WebpackBar = require('webpackbar')
 
@@ -18,12 +17,6 @@ const {
 
 module.exports = {
   entry: resolve('src/demo'),
-  output: {
-    path: resolve('dist'),
-    filename: 'js/[name].[hash].js',
-    publicPath,
-    chunkFilename: 'js/[id].[hash].js'
-  },
   module: {
     rules: [{
         test: /\.js$/,
@@ -106,20 +99,6 @@ module.exports = {
         ignore: ['.*']
       }] : []
     ),
-    new HtmlWebpackPlugin({
-      template: 'public/index.html',
-      path: publicPath,
-      filename: 'index.html',
-      inject: true,
-      minify: {
-        removeComments: true,
-        collapseWhitespace: true,
-        removeAttributeQuotes: true,
-        minifyJS: true,
-        minifyCSS: true
-      },
-      chunksSortMode: 'dependency'
-    }),
     new WebpackBar()
   ]
 }
