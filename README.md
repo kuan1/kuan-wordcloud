@@ -30,3 +30,7 @@ import initCloud from 'kuan-wordcloud'
 
 initCloud(document.getElementById('demo'), [{name: '测试', value: 200}])
 ```
+
+## 更新日志
+
+- v1.0.1: 加入 echarts resize
