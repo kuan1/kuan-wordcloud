@@ -1,0 +1,201 @@
+[{
+        "avatar": "https://avatars0.githubusercontent.com/u/961950?s=40&v=4",
+        "desc": "The original sources of MS-DOS 1.25 and 2.0, for reference purposes",
+        "link": "https://github.com/Microsoft/MS-DOS",
+        "owner": "Microsoft",
+        "repo": "MS-DOS",
+        "stars": "5,121"
+    },
+    {
+        "avatar": "https://avatars3.githubusercontent.com/u/947005?s=40&v=4",
+        "desc": "Solid - Re-decentralizing the web (project directory)",
+        "link": "https://github.com/solid/solid",
+        "owner": "solid",
+        "repo": "solid",
+        "stars": "3,389"
+    },
+    {
+        "avatar": "https://avatars0.githubusercontent.com/u/8281875?s=40&v=4",
+        "desc": "Curated collection of useful JavaScript snippets that you can understand in 30 seconds or less.",
+        "link": "https://github.com/30-seconds/30-seconds-of-code",
+        "owner": "30-seconds",
+        "repo": "30-seconds-of-code",
+        "stars": "24,196"
+    },
+    {
+        "avatar": "https://avatars3.githubusercontent.com/u/6391776?s=40&v=4",
+        "desc": "List of applications and tools that make my macOS experience even more amazing",
+        "link": "https://github.com/nikitavoloboev/my-mac-os",
+        "owner": "nikitavoloboev",
+        "repo": "my-mac-os",
+        "stars": "11,711"
+    },
+    {
+        "avatar": "https://avatars1.githubusercontent.com/u/2249551?s=40&v=4",
+        "desc": "How to create an OS from scratch",
+        "link": "https://github.com/cfenollosa/os-tutorial",
+        "owner": "cfenollosa",
+        "repo": "os-tutorial",
+        "stars": "9,738"
+    },
+    {
+        "avatar": "https://avatars0.githubusercontent.com/u/1543151?s=40&v=4",
+        "desc": "SeaweedFS is a simple and highly scalable distributed file system. There are two objectives: to store billions of files! to serve the files fast! SeaweedFS implements an object store with O(1) disk seek, and an optional Filer with POSIX interface.",
+        "link": "https://github.com/chrislusf/seaweedfs",
+        "owner": "chrislusf",
+        "repo": "seaweedfs",
+        "stars": "6,145"
+    },
+    {
+        "avatar": "https://avatars1.githubusercontent.com/u/14276147?s=40&v=4",
+        "desc": "All Algorithms implemented in Python",
+        "link": "https://github.com/TheAlgorithms/Python",
+        "owner": "TheAlgorithms",
+        "repo": "Python",
+        "stars": "11,942"
+    },
+    {
+        "avatar": "https://avatars0.githubusercontent.com/u/29880145?s=40&v=4",
+        "desc": "A core knowledge that most Java programmers need to master",
+        "link": "https://github.com/Snailclimb/JavaGuide",
+        "owner": "Snailclimb",
+        "repo": "JavaGuide",
+        "stars": "7,293"
+    },
+    {
+        "avatar": "https://avatars1.githubusercontent.com/u/12671205?s=40&v=4",
+        "desc": "基于Laravel开发的在线点播系统。",
+        "link": "https://github.com/Qsnh/meedu",
+        "owner": "Qsnh",
+        "repo": "meedu",
+        "stars": "287"
+    },
+    {
+        "avatar": "https://avatars1.githubusercontent.com/u/543275?s=40&v=4",
+        "desc": "Display and control your Android device",
+        "link": "https://github.com/Genymobile/scrcpy",
+        "owner": "Genymobile",
+        "repo": "scrcpy",
+        "stars": "7,529"
+    },
+    {
+        "avatar": "https://avatars1.githubusercontent.com/u/1424850?s=40&v=4",
+        "desc": "Solid server on top of the file-system in NodeJS",
+        "link": "https://github.com/solid/node-solid-server",
+        "owner": "solid",
+        "repo": "node-solid-server",
+        "stars": "494"
+    },
+    {
+        "avatar": "https://avatars0.githubusercontent.com/u/934293?s=40&v=4",
+        "desc": "📦 Module thinking, principles, design patterns and best practices.",
+        "link": "https://github.com/mjavascript/mastering-modular-javascript",
+        "owner": "mjavascript",
+        "repo": "mastering-modular-javascript",
+        "stars": "2,302"
+    },
+    {
+        "avatar": "https://avatars1.githubusercontent.com/u/28261876?s=40&v=4",
+        "desc": "Leetcode 题解 (跟随思路一步一步撸出代码) 及经典算法实现",
+        "link": "https://github.com/apachecn/awesome-algorithm",
+        "owner": "apachecn",
+        "repo": "awesome-algorithm",
+        "stars": "4,605"
+    },
+    {
+        "avatar": "https://avatars0.githubusercontent.com/u/15684156?s=40&v=4",
+        "desc": "👨\u200d🎓 Java Core Sprout : basic, concurrent, algorithm",
+        "link": "https://github.com/crossoverJie/JCSprout",
+        "owner": "crossoverJie",
+        "repo": "JCSprout",
+        "stars": "14,506"
+    },
+    {
+        "avatar": "https://avatars1.githubusercontent.com/u/4921183?s=40&v=4",
+        "desc": "Roadmap to becoming a web developer in 2018",
+        "link": "https://github.com/kamranahmedse/developer-roadmap",
+        "owner": "kamranahmedse",
+        "repo": "developer-roadmap",
+        "stars": "57,679"
+    },
+    {
+        "avatar": "https://avatars3.githubusercontent.com/u/9773803?s=40&v=4",
+        "desc": "Collection of useful React.js components",
+        "link": "https://github.com/streamich/libreact",
+        "owner": "streamich",
+        "repo": "libreact",
+        "stars": "159"
+    },
+    {
+        "avatar": "https://avatars1.githubusercontent.com/u/5355?s=40&v=4",
+        "desc": "A rich text editor for everyday writing",
+        "link": "https://github.com/basecamp/trix",
+        "owner": "basecamp",
+        "repo": "trix",
+        "stars": "10,852"
+    },
+    {
+        "avatar": "https://avatars3.githubusercontent.com/u/341675?s=40&v=4",
+        "desc": "Python REMote Interface library. Platform independent. In about 100 Kbytes, perfect for your diet.",
+        "link": "https://github.com/dddomodossola/remi",
+        "owner": "dddomodossola",
+        "repo": "remi",
+        "stars": "1,531"
+    },
+    {
+        "avatar": "https://avatars2.githubusercontent.com/u/12747128?s=40&v=4",
+        "desc": "A UI automated testing framework for H5 and applets",
+        "link": "https://github.com/Tencent/FAutoTest",
+        "owner": "Tencent",
+        "repo": "FAutoTest",
+        "stars": "249"
+    },
+    {
+        "avatar": "https://avatars1.githubusercontent.com/u/17151892?s=40&v=4",
+        "desc": "An Open Source Machine Learning Framework for Everyone",
+        "link": "https://github.com/tensorflow/tensorflow",
+        "owner": "tensorflow",
+        "repo": "tensorflow",
+        "stars": "110,938"
+    },
+    {
+        "avatar": "https://avatars3.githubusercontent.com/u/18074076?s=40&v=4",
+        "desc": "Brand new web browser engine",
+        "link": "https://github.com/FlightBlaze/Newtoo",
+        "owner": "FlightBlaze",
+        "repo": "Newtoo",
+        "stars": "103"
+    },
+    {
+        "avatar": "https://avatars2.githubusercontent.com/u/10602?s=40&v=4",
+        "desc": "🙈 Volkswagen detects when your tests are being run in a CI server, and makes them pass.",
+        "link": "https://github.com/auchenberg/volkswagen",
+        "owner": "auchenberg",
+        "repo": "volkswagen",
+        "stars": "8,793"
+    },
+    {
+        "avatar": "https://avatars2.githubusercontent.com/u/2088859?s=40&v=4",
+        "desc": "An efficient, small mobile key-value storage framework developed by WeChat. Works on iOS and Android.",
+        "link": "https://github.com/Tencent/MMKV",
+        "owner": "Tencent",
+        "repo": "MMKV",
+        "stars": "4,299"
+    },
+    {
+        "avatar": "https://avatars2.githubusercontent.com/u/499550?s=40&v=4",
+        "desc": "🖖 A progressive, incrementally-adoptable JavaScript framework for building UI on the web.",
+        "link": "https://github.com/vuejs/vue",
+        "owner": "vuejs",
+        "repo": "vue",
+        "stars": "115,314"
+    },
+    {
+        "avatar": "https://avatars3.githubusercontent.com/u/471934?s=40&v=4",
+        "desc": "CloudWalker Platform",
+        "link": "https://github.com/chaitin/cloudwalker",
+        "owner": "chaitin",
+        "repo": "cloudwalker",
+        "stars": "89"
+    }
+]

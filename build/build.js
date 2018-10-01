@@ -13,6 +13,7 @@ const {
   resolve
 } = require('./utils')
 
+// build config
 const webpackConfig = merge(baseConfig, {
   mode: 'production',
   optimization: {
@@ -26,12 +27,11 @@ const webpackConfig = merge(baseConfig, {
       filename: './css/[name].[hash:7].css',
       chunkFilename: './css/[id].[hash:7].css',
     }),
+    new CleanWebpackPlugin([baseConfig.output.path || resolve('dist')], {
+      root: process.cwd()
+    })
   ]
 })
-const distPath = webpackConfig.output.path || resolve('dist')
-webpackConfig.plugins.push(new CleanWebpackPlugin([distPath], {
-  root: process.cwd()
-}))
 
 // 开始编译
 webpack(webpackConfig, (err, stats) => {

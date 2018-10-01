@@ -17,7 +17,7 @@ const {
 } = require('./loaders')
 
 module.exports = {
-  entry: resolve('src'),
+  entry: resolve('src/demo'),
   output: {
     path: resolve('dist'),
     filename: 'js/[name].[hash].js',
