@@ -33,4 +33,5 @@ initCloud(document.getElementById('demo'), [{name: '测试', value: 200}])
 
 ## 更新日志
 
+- v1.0.2: return echarts 实例对象
 - v1.0.1: 加入 echarts resize

@@ -7,4 +7,11 @@ const data = githubTreedingData.map(item => ({
   value: item.stars.replace(/\D/, '')
 }))
 
-initCloud(document.getElementById('demo'), data)
+const chart = initCloud(document.getElementById('demo'), data)
+
+console.log(chart)
+chart.on('click', ({
+  data
+}) => {
+  alert(data.name)
+})

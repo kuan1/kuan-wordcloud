@@ -46,4 +46,5 @@ export default function initCloud(el, data) {
   chart.setOption(options);
 
   window.addEventListener('resize', chart.resize)
+  return chart
 }
