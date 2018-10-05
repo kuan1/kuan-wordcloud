@@ -93,8 +93,8 @@ module.exports = {
       }
     }),
     new CopyWebpackPlugin(
-      fs.existsSync(resolve('static')) ? [{
-        from: resolve('static'),
+      fs.existsSync(resolve('public')) ? [{
+        from: resolve('public'),
         to: '',
         ignore: ['.*']
       }] : []
