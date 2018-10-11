@@ -3,22 +3,15 @@ const webpack = require('webpack')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const WebpackBar = require('webpackbar')
 
-const {
-  resolve
-} = require('./utils')
+const { resolve } = require('./utils')
 
-const publicPath = ''
-
-const {
-  cssLoader,
-  sassLoader,
-  lessLoader
-} = require('./loaders')
+const { cssLoader, sassLoader, lessLoader } = require('./loaders')
 
 module.exports = {
   entry: resolve('src/demo'),
   module: {
-    rules: [{
+    rules: [
+      {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
@@ -52,7 +45,7 @@ module.exports = {
         use: lessLoader
       },
       {
-        test: '/\.css$/',
+        test: '/.css$/',
         use: cssLoader
       }
     ]
@@ -93,11 +86,15 @@ module.exports = {
       }
     }),
     new CopyWebpackPlugin(
-      fs.existsSync(resolve('public')) ? [{
-        from: resolve('public'),
-        to: '',
-        ignore: ['.*']
-      }] : []
+      fs.existsSync(resolve('public'))
+        ? [
+            {
+              from: resolve('public'),
+              to: '',
+              ignore: ['.*']
+            }
+          ]
+        : []
     ),
     new WebpackBar()
   ]
