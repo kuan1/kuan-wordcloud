@@ -1,6 +1,6 @@
 {
   "name": "kuan-wordcloud",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "> test echarts",
   "main": "lib/kuan-wordcloud.js",
   "scripts": {
