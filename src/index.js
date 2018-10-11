@@ -18,9 +18,9 @@ export default function initCloud(el, data) {
         height: '95%',
         right: null,
         bottom: null,
-        sizeRange: [1, 200],
+        sizeRange: [14, 38],
         rotationRange: [-90, 90],
-        rotationStep: 45,
+        rotationStep: 15,
         gridSize: 8,
         drawOutOfBound: false,
         textStyle: {
