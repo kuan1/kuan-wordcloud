@@ -27,7 +27,7 @@ export default function initCloud(el, data) {
           normal: {
             fontFamily: 'sans-serif',
             fontWeight: 'bold',
-            color: function() {
+            color: function () {
               return (
                 'rgb(' +
                 [

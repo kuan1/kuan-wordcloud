@@ -33,6 +33,7 @@ initCloud(document.getElementById('demo'), [{name: '测试', value: 200}])
 
 ## 更新日志
 
+- v1.0.6: 只引入echarts主要模块，体积 809 -> 290
 - v1.0.5: 更改大小显示范围、旋转角度
 - v1.0.4: 更改大小显示范围
 - v1.0.3: 1.0.2 版本忘了 build（-，-）

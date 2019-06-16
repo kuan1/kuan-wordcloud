@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "node build/dev",
     "build": "node build/build",
+    "build:lib": "node build/buildLib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

@@ -1,5 +1,7 @@
 process.env.NODE_ENV = 'production'
 
+const fs = require('fs')
+
 const webpack = require('webpack')
 const merge = require('webpack-merge')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
@@ -7,7 +9,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-// const nodeExternals = require('webpack-node-externals')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const baseConfig = require('./webpack.config')
 
@@ -29,19 +31,49 @@ const webpackConfig = merge(baseConfig, {
   },
   mode: 'production',
   optimization: {
+    namedChunks: true,
     minimizer: [
       new OptimizeCSSAssetsPlugin({}),
       new UglifyJsPlugin()
-    ]
+    ],
+    splitChunks: {
+      minSize: 30000,
+      cacheGroups: {
+        commons: {
+          chunks: 'initial', // "initial", "async", "all"
+          name: 'commons',
+          minChunks: 2,
+          maxInitialRequests: 5,
+          minSize: 0,
+          priority: 0
+        },
+        vendor: {
+          chunks: 'initial', // "initial", "async", "all"
+          test: /node_modules/, // /[\\/]node_modules[\\/]vue/,
+          name: 'vendor',
+          priority: -10,
+          enforce: true
+        }
+      }
+    }
   },
   // externals: [nodeExternals()],
   plugins: [
     new MiniCssExtractPlugin({
       filename: `${libName}.css`,
     }),
-    new CleanWebpackPlugin([distPath], {
-      root: process.cwd()
-    }),
+    new CopyWebpackPlugin(
+      fs.existsSync(resolve('public'))
+        ? [
+          {
+            from: resolve('public'),
+            to: '',
+            ignore: ['.*']
+          }
+        ]
+        : []
+    ),
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: 'public/index.html',
       filename: 'index.html',
